@@ -1,6 +1,6 @@
 # Ramen Remedy
 
-### Warm bowls. Soft landings. 
+### Warm bowls. Soft landings.
 
 Ramen Remedy is a cozy ramen ordering experience built for an internship project. It turns a small menu into a full little journey: choose a bowl, make it yours, check out, and receive a polished order ticket.
 
@@ -91,5 +91,6 @@ node --test tests/*.test.mjs
 - The frontend never receives a Supabase service key.
 - Admin mutations are designed to go through protected Flask routes.
 
+## Ramen Remedy
 
-Ramen Remedy is a small project about making a normal evening feel a little warmer — one bowl at a time.
+A small project about making a normal evening feel a little warmer — one bowl at a time.
