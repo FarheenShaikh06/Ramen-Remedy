@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import formatPrice from "../utils/formatPrice.js";
+import { calculateDemoOrder } from "../utils/demoOrder.js";
 
 const emptyOptionGroups = { broth: [], noodle: [], protein: [], spice: [] };
 
@@ -91,6 +92,12 @@ function CustomBuilder({ toppings, customOptions = emptyOptionGroups, apiUrl, on
       quantity,
     };
 
+    if (!apiUrl) {
+      setCalculation(calculateDemoOrder(orderData, { customOptions, toppings }));
+      setPriceError("");
+      return;
+    }
+
     let requestWasCancelled = false;
 
     fetch(`${apiUrl}/api/calculate-order`, {
@@ -159,7 +166,7 @@ function CustomBuilder({ toppings, customOptions = emptyOptionGroups, apiUrl, on
         <div className="section-heading">
           <p className="eyebrow">Build your bowl</p>
           <h2>Make ramen your way</h2>
-          <p>Choose the broth, noodles, protein, spice, and toppings. The backend updates the total as you build.</p>
+          <p>Choose the broth, noodles, protein, spice, and toppings. Your total updates as you build.</p>
         </div>
         {priceError && !calculation && <p className="form-error builder-load-note">{priceError}</p>}
 

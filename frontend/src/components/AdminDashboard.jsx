@@ -269,7 +269,7 @@ function AdminDashboard({ apiUrl, onDataChanged }) {
 
   function friendlyRequestError(requestError) {
     if (requestError.message === "Failed to fetch") {
-      return "I cannot reach the Flask backend right now. Restart Flask on http://localhost:5000, then try again.";
+      return "I cannot reach the Flask backend right now. Start the backend, then try again.";
     }
 
     return requestError.message;
