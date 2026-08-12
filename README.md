@@ -1,8 +1,8 @@
 # Ramen Remedy
 
-### Warm bowls. Soft landings. Made by Fari.
+### Warm bowls. Soft landings. 
 
-Ramen Remedy is a cozy ramen ordering experience built for Farheen's internship project. It turns a small menu into a full little journey: choose a bowl, make it yours, check out, and receive a polished order ticket.
+Ramen Remedy is a cozy ramen ordering experience built for an internship project. It turns a small menu into a full little journey: choose a bowl, make it yours, check out, and receive a polished order ticket.
 
 <p align="center">
   <a href="https://ramen-ramedy.netlify.app/"><strong>Open the live demo →</strong></a>
@@ -91,6 +91,5 @@ node --test tests/*.test.mjs
 - The frontend never receives a Supabase service key.
 - Admin mutations are designed to go through protected Flask routes.
 
-## Made by Fari
 
 Ramen Remedy is a small project about making a normal evening feel a little warmer — one bowl at a time.
