@@ -1,0 +1,92 @@
+const ramenImage = "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=80";
+
+export const demoCatalog = {
+  menuItems: [
+    {
+      id: "classic-chicken-ramen",
+      name: "Classic Chicken Ramen",
+      description: "Slow-simmered chicken broth, springy noodles, tender chicken, greens, and a jammy egg.",
+      price: 850,
+      image: ramenImage,
+      tags: ["comfort", "chicken", "classic"],
+    },
+    {
+      id: "spicy-miso-ramen",
+      name: "Spicy Miso Ramen",
+      description: "A cozy miso broth with a gentle kick, corn, scallions, and chili warmth.",
+      price: 950,
+      image: "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?auto=format&fit=crop&w=900&q=80",
+      tags: ["spicy", "miso", "popular"],
+    },
+    {
+      id: "korean-fire-ramen",
+      name: "Korean Fire Ramen",
+      description: "Bold red broth, chewy noodles, chili oil, and big heat for spice lovers.",
+      price: 1050,
+      image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=900&q=80",
+      tags: ["extra spicy", "bold", "hot"],
+    },
+    {
+      id: "creamy-cheese-ramen",
+      name: "Creamy Cheese Ramen",
+      description: "Silky broth with melted cheese, sweet corn, noodles, and soft cozy flavor.",
+      price: 990,
+      image: "https://images.unsplash.com/photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=900&q=80",
+      tags: ["creamy", "cheese", "cozy"],
+    },
+    {
+      id: "veggie-comfort-ramen",
+      name: "Veggie Comfort Ramen",
+      description: "Vegetable broth with mushrooms, tofu, corn, seaweed, and fresh spring onions.",
+      price: 780,
+      image: "https://images.unsplash.com/photo-1637024698421-533d83c7b883?auto=format&fit=crop&w=900&q=80",
+      tags: ["vegetarian", "light", "fresh"],
+    },
+    {
+      id: "seafood-ramen",
+      name: "Seafood Ramen",
+      description: "Ocean-inspired broth with shrimp, seaweed, scallions, and a clean savory finish.",
+      price: 1150,
+      image: "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=900&q=80",
+      tags: ["seafood", "shrimp", "savory"],
+    },
+  ],
+  toppings: [
+    { id: "boiled-egg", name: "Boiled Egg", price: 120, icon: "🥚" },
+    { id: "corn", name: "Corn", price: 70, icon: "🌽" },
+    { id: "mushrooms", name: "Mushrooms", price: 110, icon: "🍄" },
+    { id: "chicken-slices", name: "Chicken Slices", price: 250, icon: "🍗" },
+    { id: "cheese", name: "Cheese", price: 130, icon: "🧀" },
+    { id: "seaweed", name: "Seaweed", price: 80, icon: "🌿" },
+    { id: "chili-oil", name: "Chili Oil", price: 60, icon: "🌶️" },
+    { id: "spring-onions", name: "Spring Onions", price: 40, icon: "🥗" },
+    { id: "tofu", name: "Tofu", price: 180, icon: "◻️" },
+  ],
+  customOptions: {
+    broth: [
+      { id: "shoyu", name: "Shoyu Broth", note: "soy-based and balanced", price: 520, icon: "🍜" },
+      { id: "miso", name: "Miso Broth", note: "savory, deep, and cozy", price: 570, icon: "🍲" },
+      { id: "tonkotsu", name: "Tonkotsu Broth", note: "rich and creamy-style", price: 650, icon: "🥣" },
+      { id: "veggie", name: "Veggie Broth", note: "light and plant-friendly", price: 500, icon: "🥦" },
+    ],
+    noodle: [
+      { id: "classic", name: "Classic Noodles", note: "regular springy ramen noodles", price: 0, icon: "🍜" },
+      { id: "thick", name: "Thick Noodles", note: "chewy noodles for extra comfort", price: 80, icon: "🍝" },
+      { id: "thin", name: "Thin Noodles", note: "light noodles that soak broth quickly", price: 0, icon: "🥢" },
+      { id: "udon", name: "Udon-Style Noodles", note: "wide soft noodles with a cozy bite", price: 120, icon: "🥣" },
+    ],
+    protein: [
+      { id: "none", name: "No Protein", note: "keep it simple", price: 0, icon: "✨" },
+      { id: "chicken", name: "Chicken", note: "tender chicken pieces", price: 250, icon: "🍗" },
+      { id: "tofu", name: "Tofu", note: "soft vegetarian protein", price: 180, icon: "◻️" },
+      { id: "shrimp", name: "Shrimp", note: "seafood-style protein", price: 350, icon: "🦐" },
+      { id: "beef", name: "Beef", note: "rich and filling protein", price: 380, icon: "🥩" },
+    ],
+    spice: [
+      { id: "mild", name: "Mild", note: "gentle and cozy", price: 0, icon: "🌱" },
+      { id: "medium", name: "Medium", note: "warm but balanced", price: 40, icon: "🌶️" },
+      { id: "hot", name: "Hot", note: "strong chili warmth", price: 70, icon: "🔥" },
+      { id: "fire", name: "Fire", note: "for serious spice lovers", price: 90, icon: "🔥" },
+    ],
+  },
+};

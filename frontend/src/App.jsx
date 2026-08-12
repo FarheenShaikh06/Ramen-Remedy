@@ -10,8 +10,9 @@ import FloatingRemi from "./components/FloatingRemi.jsx";
 import CustomCursor from "./components/CustomCursor.jsx";
 import About from "./components/About.jsx";
 import Footer from "./components/Footer.jsx";
+import { demoCatalog } from "./data/demoCatalog.js";
 
-const API_URL = "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 const defaultSiteSettings = {
   primary_color: "#d85d32",
@@ -50,6 +51,15 @@ function App() {
 
   function loadCatalog() {
     setApiError("");
+
+    if (!API_URL) {
+      setMenuItems(demoCatalog.menuItems);
+      setToppings(demoCatalog.toppings);
+      setCustomOptions(demoCatalog.customOptions);
+      setSiteSettings(defaultSiteSettings);
+      setApiError("Demo mode: the frontend is ready. Live menu data will appear after the backend is connected.");
+      return;
+    }
 
     fetch(`${API_URL}/api/menu`)
       .then((response) => response.json())
