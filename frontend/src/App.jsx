@@ -57,7 +57,6 @@ function App() {
       setToppings(demoCatalog.toppings);
       setCustomOptions(demoCatalog.customOptions);
       setSiteSettings(defaultSiteSettings);
-      setApiError("Demo mode: the frontend is ready. Live menu data will appear after the backend is connected.");
       return;
     }
 
